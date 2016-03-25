@@ -19,8 +19,8 @@ if(!speed) {
 }
 
 rounds = parseInt(rounds);
-var bot1File = (bot1.startsWith('/')?'':'bots/') + bot1 + '/main.js';
-var bot2File = (bot2.startsWith('/')?'':'bots/') + bot2 + '/main.js';
+var bot1File = (bot1.startsWith('/')?'':'bots/') + bot1 + '.js';
+var bot2File = (bot2.startsWith('/')?'':'bots/') + bot2 + '.js';
 
 duel = new Duel(bot1File, bot2File, rounds, speed);
 duel.drawScans = getUrlParam('drawScans') != null;
