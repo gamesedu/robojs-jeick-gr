@@ -39,53 +39,110 @@ RobotBase.prototype = {
         this.rotationLeft = radians;
         this.queueFollowUp(onFinished);
     },
-    
+	ΔΕΞΙΑ: function(radians, onFinished) {
+        this.sendMessage('TURN', {angle: radians});
+        this.rotationLeft = radians;
+        this.queueFollowUp(onFinished);
+    },
+	ΔΕ: function(radians, onFinished) {
+        this.sendMessage('TURN', {angle: radians});
+        this.rotationLeft = radians;
+        this.queueFollowUp(onFinished);
+    },    
     turnLeft: function(radians, onFinished) {
         this.sendMessage('TURN', {angle: -radians});
         this.rotationLeft = -radians;
         this.queueFollowUp(onFinished);
     },
-    
+    ΑΡΙΣΤΕΡΑ: function(radians, onFinished) {
+        this.sendMessage('TURN', {angle: -radians});
+        this.rotationLeft = -radians;
+        this.queueFollowUp(onFinished);
+    },
+    ΑΡ: function(radians, onFinished) {
+        this.sendMessage('TURN', {angle: -radians});
+        this.rotationLeft = -radians;
+        this.queueFollowUp(onFinished);
+    },       
     turnGunRight: function(radians, onFinished) {
         this.sendMessage('TURN_GUN', {angle: radians});
         this.gunRotationLeft = radians;
         this.queueFollowUp(onFinished);
     },
-    
+    ΟΠΛΟ_ΔΕΞΙΑ: function(radians, onFinished) {
+        this.sendMessage('TURN_GUN', {angle: radians});
+        this.gunRotationLeft = radians;
+        this.queueFollowUp(onFinished);
+    },    
     turnGunLeft: function(radians, onFinished) {
         this.sendMessage('TURN_GUN', {angle: -radians});
         this.gunRotationLeft = -radians;
         this.queueFollowUp(onFinished);
     },
-    
+    ΟΠΛΟ_ΑΡΙΣΤΕΡΑ: function(radians, onFinished) {
+        this.sendMessage('TURN_GUN', {angle: -radians});
+        this.gunRotationLeft = -radians;
+        this.queueFollowUp(onFinished);
+    },   
     turnRadarRight: function(radians, onFinished) {
         this.sendMessage('TURN_RADAR', {angle: radians});
         this.radarRotationLeft = radians;
         this.queueFollowUp(onFinished);
     },
-    
+    ΡΑΝΤΑΡ_ΔΕΞΙΑ: function(radians, onFinished) {
+        this.sendMessage('TURN_RADAR', {angle: radians});
+        this.radarRotationLeft = radians;
+        this.queueFollowUp(onFinished);
+    },   
     turnRadarLeft: function(radians, onFinished) {
         this.sendMessage('TURN_RADAR', {angle: -radians});
         this.radarRotationLeft = -radians;
         this.queueFollowUp(onFinished);
     },
-    
+    ΡΑΝΤΑΡ_ΑΡΙΣΤΕΡΑ: function(radians, onFinished) {
+        this.sendMessage('TURN_RADAR', {angle: -radians});
+        this.radarRotationLeft = -radians;
+        this.queueFollowUp(onFinished);
+    },    
     moveForward: function(distance, onFinished) {
         this.sendMessage('MOVE', {distance: distance});
         this.distanceLeft = distance;
         this.queueFollowUp(onFinished);
     },
-    
+    ΜΠΡΟΣΤΑ: function(distance, onFinished) {
+        this.sendMessage('MOVE', {distance: distance});
+        this.distanceLeft = distance;
+        this.queueFollowUp(onFinished);
+    },	
+    ΜΠ: function(distance, onFinished) {
+        this.sendMessage('MOVE', {distance: distance});
+        this.distanceLeft = distance;
+        this.queueFollowUp(onFinished);
+    },    
     moveBack: function(distance, onFinished) {
         this.sendMessage('MOVE', {distance: -distance});
         this.distanceLeft = -distance;
         this.queueFollowUp(onFinished);
     },
-    
+    ΠΙΣΩ: function(distance, onFinished) {
+        this.sendMessage('MOVE', {distance: -distance});
+        this.distanceLeft = -distance;
+        this.queueFollowUp(onFinished);
+    }, 
+    ΠΙ: function(distance, onFinished) {
+        this.sendMessage('MOVE', {distance: -distance});
+        this.distanceLeft = -distance;
+        this.queueFollowUp(onFinished);
+    },	
     fire: function(firingPower) {
         this.sendMessage('FIRE', {firingPower: firingPower});
     },
-    
+    ΠΥΡ: function(firingPower) {
+        this.sendMessage('FIRE', {firingPower: firingPower});
+    }, 
+    ΕΠΙΘΕΣΗ: function(firingPower) {
+        this.sendMessage('FIRE', {firingPower: firingPower});
+    },   	
     setAdjustGunForRobotTurn: function(adjust) {
         this.sendMessage('ADJUST_GUN_FOR_ROBOT_TURN', {adjust: adjust});
     },
