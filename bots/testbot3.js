@@ -5,7 +5,7 @@ var started = false;
 
 Testbot2 = function() {
     RobotBase.call(this);
-    this.name = 'Testbot II';
+    this.name = 'Testbot III';
 }
 
 Testbot2.prototype = Object.create(RobotBase.prototype);
@@ -13,7 +13,9 @@ Testbot2.prototype.constructor = Testbot2;
 
 Testbot2.prototype.run = function() {
     this.moveForward(200);
-    this.turnRight(10);
+	this.ΜΠΡΟΣΤΑ(200);
+	this.ΠΥΡ(3);
+    this.ΔΕΞΙΑ(10);
     
 };
  
