@@ -6,8 +6,8 @@ MyRobot = function() {
     this.name = '---TEMPLATE PLEASE RENAME---';
 }
 
-MyRobot.prototype.prototype = Object.create(RobotBase.prototype);
-MyRobot.prototype.prototype.constructor = MyRobot;
+MyRobot.prototype = Object.create(RobotBase.prototype);
+MyRobot.prototype.constructor = MyRobot;
 
 MyRobot.prototype.run = function() {
     

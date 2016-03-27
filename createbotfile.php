@@ -8,7 +8,17 @@ if($debug) echo "<h2>inside createbotfile.php</h2>";
 $data = file_get_contents("bots/template-gr.js");
 if($debug) echo "<h2>template-gr: $data</h2>";
 // do tag replacements or whatever you want
-$data = str_replace("<tag1>", "<tag2>", $data);
+//TO DO Check if null...
+
+$data = str_replace("/*startRound*/", $_POST["startRound"], $data);
+$data = str_replace("/*run*/", $_POST["run"], $data);
+$data = str_replace("/*onHitWall*/", $_POST["onHitWall"], $data);
+$data = str_replace("/*onHitByBullet*/", $_POST["onHitByBullet"], $data);
+$data = str_replace("/*onBulletHitRobot*/", $_POST["onBulletHitRobot"], $data);
+$data = str_replace("/*onBulletHitWall*/", $_POST["onBulletHitWall"], $data);
+$data = str_replace("/*onScannedRobot*/", $_POST["onScannedRobot"], $data);
+//$data = str_replace("/*onDeath*/", $_POST["onDeath"], $data);
+//$data = str_replace("/*onWin*/", $_POST["onWin"], $data);
 
 //check bot filename
 $tankname=$_POST["tankname"];
@@ -18,7 +28,7 @@ if(mb_strlen($tankname)<3 || is_null($tankname)) {
 	if ($require_password && $secret_password!=$_POST["password"]) {$save_to_file=false; }
 }
 if($debug) echo "<h2>tankname $tankname</h2>";
-
+$data = str_replace("---TEMPLATE PLEASE RENAME---", $tankname, $data);
 //save it back:
 if($save_to_file)file_put_contents("bots/".$tankname.".js", $data);
 if($show_data_in_screen) echo "<h3><fieldset>Copy this to a file<pre>".$data."</pre></fieldset></h3>"

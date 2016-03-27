@@ -7,7 +7,7 @@
   </head>
   <body>
   <?php
-  $debug=true;
+  $debug=false;
   $require_password=false;
   $secret_password="1234";
   if($debug)if($_POST!=null){print_r($_POST);}
@@ -21,56 +21,41 @@ if($_POST!=null)  {
   <input type=submit value="ΔΗΜΙΟΥΡΓΙΑ ΡΟΜΠΟΤ" >
 'Ονομα τανκ (english letters):
 <input type=text name="tankname" >
-
  },
 
  //Τί να κάνουμε κάθε φορά που ξεκινάει νέος γύρος
 MyRobot.prototype.startRound = function() {
-<textarea rows="4" cols="50" name="startRound" >
-
-</textarea>
+<textarea rows="4" cols="50" name="startRound" ></textarea>
  },
     
 //Τι να κάνει συνεχώς το τανκ μας(called every game tick)
 MyRobot.prototype.run = function() {
-<textarea rows="4" cols="50" name="run" >
-
-</textarea>
+<textarea rows="4" cols="50" name="run" ></textarea>
  },
     
 //Το τανκ μας χτύπησε τοίχο. Τι να κάνουμε;
 MyRobot.prototype.onHitWall = function() {
-<textarea rows="4" cols="50" name="onHitWall" >
-
-</textarea>
+<textarea rows="4" cols="50" name="onHitWall" ></textarea>
  },
   
 //Το τανκ μας χτύπηθηκε από σφαίρα
 MyRobot.prototype.onHitByBullet = function(direction, power, velocity) {
-<textarea rows="4" cols="50" name="onHitByBullet" >
-
-</textarea>
+<textarea rows="4" cols="50" name="onHitByBullet" ></textarea>
  };
     
 //Η σφαίρα μας πέτυχε το αντίπαλο τάνκ
 MyRobot.prototype.onBulletHitRobot = function(x, y, enemyPower, enemyName) {
-<textarea rows="4" cols="50" name="onBulletHitRobot" >
-
-</textarea>
+<textarea rows="4" cols="50" name="onBulletHitRobot" ></textarea>
 };
    
 //Το ραντάρ εντόπισε τανκ. (robots are only scanned when the radar sweeps over the enemy robot during the tick)
 MyRobot.prototype.onScannedRobot = function(name, direction, distance, heading, velocity, power) {
-<textarea rows="4" cols="50" name="onScannedRobot" >
-
-</textarea>
+<textarea rows="4" cols="50" name="onScannedRobot" ></textarea>
 },
 
 //΄Μια σφαίρα μας αστόχησε και χτύπησε στον τοίχο
 MyRobot.prototype.onBulletHitWall = function(x, y) {
-<textarea rows="4" cols="50" name="onBulletHitWall" >
-
-</textarea>
+<textarea rows="4" cols="50" name="onBulletHitWall" ></textarea>
 };
     
 //this robot died

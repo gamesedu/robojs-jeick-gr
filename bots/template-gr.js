@@ -7,28 +7,25 @@ MyRobot = function() {
     this.name = '---TEMPLATE PLEASE RENAME---';
 }
 
-MyRobot.prototype.prototype = Object.create(RobotBase.prototype);
-MyRobot.prototype.prototype.constructor = MyRobot;
+MyRobot.prototype = Object.create(RobotBase.prototype);
+MyRobot.prototype.constructor = MyRobot;
 
-MyRobot.prototype.run = function() {
-    
-};
 
 //called at the start of each round
 //Τί να κάνουμε κάθε φορά που ξεκινάει νέος γύρος
 MyRobot.prototype.startRound = function() {
 /*startRound*/
- },
+ }
     
 //Τι να κάνει συνεχώς το τανκ μας(called every game tick)
 MyRobot.prototype.run = function() {
 /*run*/
- },
+ }
     
 //Το τανκ μας χτύπησε τοίχο. Τι να κάνουμε;
 MyRobot.prototype.onHitWall = function() {
 /*onHitWall*/
- },
+ }
     
 //Το τανκ μας χτύπηθηκε από σφαίρα
 MyRobot.prototype.onHitByBullet = function(direction, power, velocity) {
@@ -48,17 +45,17 @@ MyRobot.prototype.onBulletHitWall = function(x, y) {
 //Το ραντάρ εντόπισε τανκ. (robots are only scanned when the radar sweeps over the enemy robot during the tick)
 MyRobot.prototype.onScannedRobot = function(name, direction, distance, heading, velocity, power) {
 /*onScannedRobot*/
-},
+}
     
 //this robot died
 MyRobot.prototype.onDeath = function() {
 /*onDeath*/
- },
+ }
     
 //robot wins
 MyRobot.prototype.onWin = function() {
 /*onWin*/
-},
+}
 
 //create an instance and declare everything loaded, after all robots have reported in, the first round starts
 robot = new MyRobot();
