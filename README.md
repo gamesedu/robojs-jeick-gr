@@ -1,4 +1,5 @@
 # roboJS
+to check editor run createbot.php in your server (eg xampp server)
 ## Introduction
 roboJS is a clone of the popular robocode program to JavaScript. You can code your own robot in JavaScript and have it fight other bots. If robocode itself is unfamiliar to you, head over to http://robowiki.net/ to learn more about it.
 
