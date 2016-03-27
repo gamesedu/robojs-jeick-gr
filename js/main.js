@@ -11,7 +11,7 @@ if(!bot2) {
 }
 
 if(!rounds) {
-    rounds = 10;   
+    rounds = 3;   //reduced round number to 3 (to save time in class)
 }
 
 if(!speed) {
