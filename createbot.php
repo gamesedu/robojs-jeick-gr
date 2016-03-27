@@ -8,15 +8,22 @@
   <body>
   <?php
   $debug=true;
+  $require_password=false;
+  $secret_password="1234";
   if($debug)if($_POST!=null){print_r($_POST);}
+if($_POST!=null)  {
+	require "createbotfile.php";
+}
+  
   ?>
   <form action='' method="post" >
   <pre>
-'Ονομα τανκ:
-<textarea rows="4" cols="50" name="tankname" >
+  <input type=submit value="ΔΗΜΙΟΥΡΓΙΑ ΡΟΜΠΟΤ" >
+'Ονομα τανκ (english letters):
+<input type=text name="tankname" >
 
-</textarea>
- },  
+ },
+
  //Τί να κάνουμε κάθε φορά που ξεκινάει νέος γύρος
 MyRobot.prototype.startRound = function() {
 <textarea rows="4" cols="50" name="startRound" >
