@@ -15,7 +15,7 @@ function replace_greek(str) {
   //+++++++++++++translate function
   
    function translate_source(source) {
-		var degug1=true;
+		var degug1=false;
   		alert("not tranlasted: "+source);
 		source=source.toUpperCase();
 		source=this.replace_greek(source);
@@ -51,27 +51,13 @@ function replace_greek(str) {
   //------------------------------
   
    function translateform(){
-	alert("translateform()");
-	/*
-		var form = document.getElementById('frm_submit_robot').elements;
-		for(var i=0; i < form.elements.length; i++){
-			var e = form.elements[i];
-			e.value=this.translate_source(e.value);
-		}*/
+	//alert("translateform()");
+
 		var inputs = document.getElementsByTagName('textarea');
 		for (var i = 0; i < inputs.length; i += 1) {
 			//alert(inputs[i].value );
 			inputs[i].value=this.translate_source(inputs[i].value);
 		}
-		
-		/*
-		$(function(){
-			$("textarea").each(function(){
-				//this.value = this.value.replace("AFFURL",producturl);
-				this.value=this.translate_source(this.value);
-			});
-		});
-		*/
-		alert("translateform() END");
+	//alert("translateform() END");
    }
 	//source=this.translate_source(source);//jon 160320
