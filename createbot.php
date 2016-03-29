@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="title">RoboJS</title>
-	<script src="php/translate.js"></script>
+	<script src="createbot/translate.js"></script>
   </head>
   <body>
   <?php
@@ -12,9 +12,9 @@
   $secret_password="1234";
   if($debug)if($_POST!=null){print_r($_POST);}
 if($_POST!=null)  {
-	require "php/createbotfile.php";
+	require "createbot/createbotfile.php";
 }
-	require "php/createbot_form.php";
+	require "createbot/createbot_form.php";
   ?>
  
   </body>
