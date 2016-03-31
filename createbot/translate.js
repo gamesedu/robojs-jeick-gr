@@ -16,7 +16,7 @@ function replace_greek(str) {
   
    function translate_source(source) {
 		var degug1=false;
-  		alert("not tranlasted: "+source);
+  		if(degug1)alert("not tranlasted: "+source);
 		source=source.toUpperCase();
 		source=this.replace_greek(source);
 		source=source.replace(/ΟΠΛΟ_ΔΕΞΙΑ/gi, "this.turnGunRight");
