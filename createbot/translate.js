@@ -21,7 +21,7 @@ function replace_greek(str) {
 		source=this.replace_greek(source);
 		source=source.replace(/ΟΠΛΟ_ΔΕΞΙΑ/gi, "this.turnGunRight");
 		source=source.replace(/ΟΠΛΟ_ΑΡΙΣΤΕΡΑ/gi, "this.turnGunLeft");	
-		source=source.replace(/ΡΑΝΤΑΡ_ΔΕΞΙΑ:/gi, "this.turnRadarRight");	
+		source=source.replace(/ΡΑΝΤΑΡ_ΔΕΞΙΑ/gi, "this.turnRadarRight");	
 		source=source.replace(/ΡΑΝΤΑΡ_ΑΡΙΣΤΕΡΑ/gi, "this.turnRadarLeft");	
 		source=source.replace(/ΔΕΞΙΑ/gi,"this.turnRight");
 		source=source.replace(/ΑΡΙΣΤΕΡΑ/gi, "this.turnLeft");  
