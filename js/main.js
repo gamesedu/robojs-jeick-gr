@@ -7,7 +7,7 @@ if(!bot1) {
     bot1 = 'testbot';
 }   
 if(!bot2) {
-    bot2 = 'testbot2';
+    bot2 = 'sittingduck';// default opponent =sitting duck
 }
 
 if(!rounds) {
