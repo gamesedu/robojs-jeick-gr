@@ -29,7 +29,7 @@ function initBattle() {
     var bot2Index = Math.floor(Math.random()*(bots.length-1)) + 1;
     bot2 = bots[bot2Index];
 
-    var battleUrl = 'index.html?speed=40&rounds=5bot1='+bot1.file + '&bot2='+bot2.file;
+    var battleUrl = 'index.html?speed=40&rounds=3&bot1='+bot1.file + '&bot2='+bot2.file;//changed rounds to 3
 
     document.getElementById('arena').src = battleUrl;
 
