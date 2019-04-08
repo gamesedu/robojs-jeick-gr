@@ -34,3 +34,32 @@ Each battle lasts 10 rounds by default. You can change the number of rounds by s
 In order to create your own robot, it is easiest to copy the folder bots/template to a new folder in the "bots"-directory and make changes there. The bots/template/main.js contains all the necessary code to get a robot running and a short documentation to the methods you can use to control your robot. Don't forget to change your robots name.
 
 I will add a more in-depth documentation in the future.
+
+
+## Greek Words:
+(eg source=source.replace(/ΔΕΞΙΑ/gi,"this.turnRight"); )
+
+ - ΔΕΞΙΑ = this.turnRight
+ - ΑΡΙΣΤΕΡΑ/gi, "this.turnLeft  
+ - ΜΠΡΟΣΤΑ/gi, "this.moveForward
+ - ΠΙΣΩ/gi, "this.moveBack
+ - μπροστα = this.moveForward
+
+	
+ - ΣΤΟΠ/gi, "wait
+ - ΕΠΙΘΕΣΗ/gi, "this.fire
+ - ΠΥΡ/gi, "this.fire
+ - ΜΠΑΜ/gi, "this.fire(1)
+ - ΜΠΟΥΜ/gi, "this.fire(2)
+
+ - ΔΕ = this.turnRight
+ - ΑΡ/gi, "this.turnLeft
+ - ΜΠ/gi, "this.moveForward	
+ - ΠΙ/gi, "this.moveBack	
+
+ - ΠΕΡΙΜΕΝΕ/gi, "wait
+
+ - ΟΠΛΟ_ΔΕΞΙΑ/gi, "this.turnGunRight
+ - ΟΠΛΟ_ΑΡΙΣΤΕΡΑ/gi, "this.turnGunLeft	
+ - ΡΑΝΤΑΡ_ΔΕΞΙΑ/gi, "this.turnRadarRight	
+ - ΡΑΝΤΑΡ_ΑΡΙΣΤΕΡΑ/gi, "this.turnRadarLeft	
