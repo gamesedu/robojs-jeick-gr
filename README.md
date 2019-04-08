@@ -40,26 +40,26 @@ I will add a more in-depth documentation in the future.
 (eg source=source.replace(/ΔΕΞΙΑ/gi,"this.turnRight"); )
 
  - ΔΕΞΙΑ = this.turnRight
- - ΑΡΙΣΤΕΡΑ/gi, "this.turnLeft  
- - ΜΠΡΟΣΤΑ/gi, "this.moveForward
- - ΠΙΣΩ/gi, "this.moveBack
+ - ΑΡΙΣΤΕΡΑ = this.turnLeft  
+ - ΜΠΡΟΣΤΑ = this.moveForward
+ - ΠΙΣΩ = this.moveBack
  - μπροστα = this.moveForward
 
 	
- - ΣΤΟΠ/gi, "wait
- - ΕΠΙΘΕΣΗ/gi, "this.fire
- - ΠΥΡ/gi, "this.fire
- - ΜΠΑΜ/gi, "this.fire(1)
- - ΜΠΟΥΜ/gi, "this.fire(2)
+ - ΣΤΟΠ = wait
+ - ΕΠΙΘΕΣΗ = this.fire
+ - ΠΥΡ = this.fire
+ - ΜΠΑΜ = this.fire(1)
+ - ΜΠΟΥΜ = this.fire(2)
 
  - ΔΕ = this.turnRight
- - ΑΡ/gi, "this.turnLeft
- - ΜΠ/gi, "this.moveForward	
- - ΠΙ/gi, "this.moveBack	
+ - ΑΡ = this.turnLeft
+ - ΜΠ = this.moveForward	
+ - ΠΙ = this.moveBack	
 
- - ΠΕΡΙΜΕΝΕ/gi, "wait
+ - ΠΕΡΙΜΕΝΕ = wait
 
- - ΟΠΛΟ_ΔΕΞΙΑ/gi, "this.turnGunRight
- - ΟΠΛΟ_ΑΡΙΣΤΕΡΑ/gi, "this.turnGunLeft	
- - ΡΑΝΤΑΡ_ΔΕΞΙΑ/gi, "this.turnRadarRight	
- - ΡΑΝΤΑΡ_ΑΡΙΣΤΕΡΑ/gi, "this.turnRadarLeft	
+ - ΟΠΛΟ_ΔΕΞΙΑ = this.turnGunRight
+ - ΟΠΛΟ_ΑΡΙΣΤΕΡΑ = this.turnGunLeft	
+ - ΡΑΝΤΑΡ_ΔΕΞΙΑ = this.turnRadarRight	
+ - ΡΑΝΤΑΡ_ΑΡΙΣΤΕΡΑ = this.turnRadarLeft	
